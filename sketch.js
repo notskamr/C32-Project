@@ -10,6 +10,7 @@ var ball;
 var slingShot;
 var polygon_img;
 var backgroundImg
+var score = 0;
 function preload(){
   polygon_img=loadImage("polygon.png");
   getBackgroundImg();
@@ -68,9 +69,9 @@ function draw() {
   background(backgroundImg);
 
   noStroke();
-  textSize(35)
-  fill("white")
-  text("Score  " + score, width-300, 50)
+  textSize(20)
+  fill("gray")
+  text("Score  " + score, 20,70)
   textSize(20);
   fill("yellow");
   text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",100,30);
