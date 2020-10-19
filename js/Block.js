@@ -15,8 +15,11 @@ class Block{
       World.add(world, this.body);
     }
     display(){
-      console.log(this.body.speed);
       if(this.body.speed < 3){
+
+          
+
+
         var angle = this.body.angle
         var pos = this.body.position
         push()
@@ -34,5 +37,14 @@ class Block{
         pop();
       }
       
+
+      
+    }
+
+    score()
+    {
+      if (this.visibility < -5  && this.visibility > - 20) {
+        score = score + 1;
+      }
     }
   }
