@@ -184,10 +184,10 @@ async function getBackgroundImg(){
   var datetime = date.getHours()
   
   if(hour>=0600 && hour<=1900){
-      bg = "sprites/bg1.png";
+      bg = "sprites/bg2.png";
   }
   else{
-      bg = "sprites/bg2.png";
+      bg = "sprites/bg1.png";
   }
 
   backgroundImg = loadImage(bg);
